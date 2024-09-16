@@ -1,5 +1,5 @@
 const slides = document.querySelectorAll('.slide');
-const slides2 = document.querySelector('.slides-list');
+const slidesList = document.querySelector('.slides-list');
 const slideTextbox = document.querySelector('.slide-textbox');
 const sliderNavBtn = document.querySelectorAll('.slider-nav-btn');
 
@@ -10,7 +10,7 @@ sliderNavBtn.forEach((control, index) => {
     event.preventDefault();
     currentSlide = index;
 
-    slides2.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slidesList.style.transform = `translateX(-${currentSlide * 100}%)`;
 
     slideTextbox.style.transform = `translateX(-${currentSlide * 100}%)`;
 
